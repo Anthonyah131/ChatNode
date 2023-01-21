@@ -1,0 +1,39 @@
+body {
+  background: #f3eae8;
+}
+form {
+  background: rgba(0, 0, 0, .15); 
+  padding: 0.25rem; 
+  position: fixed; 
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  height: 3rem;
+  box-sizing: border-box;
+  backdrop-filter: blur(10px);
+}
+ul {list-style-type: none; margin: 0; padding: 0;}
+ul > li {padding: 0.5rem 1rem;}
+.container-msg {
+  display: flex;
+  flex-direction: column;
+}
+.to-message {
+  background: #cce7e8;
+  margin-right: auto;
+  margin-left: 10px;
+  border-radius: 0px 18px 18px 18px;
+}
+.from-message {
+  align-self: end;
+  border-radius: 18px 0px 18px 18px;
+  background: #1e81b0;
+}
+.from-message, .to-message {
+  padding: 20px;
+  font-style: italic;
+  font-weight: 800;
+  max-width: calc(100% - 80px);
+  height: auto;
+}
